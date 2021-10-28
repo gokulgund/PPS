@@ -1,0 +1,19 @@
+a=10
+b=20
+c=30
+val=`expr $a + $b \* $c`
+echo "a + b *c : $val"
+val1=`expr $a % $b + $c`
+echo "a % b + c : $val1"
+val2=`expr $c + $a / $b`
+echo "c + a / b : $val2"
+val3=`expr $a \* $b + $c`
+echo "a * b + c : $val3"
+arr=( $val $val1 $val2 $val3 )
+
+for i in ${arr[@]}; do
+ (( $i > max || max == 0)) && max=$i
+ (( $i < min || min == 0)) && min=$i
+done
+echo " min= $min" 
+echo " max= $max "

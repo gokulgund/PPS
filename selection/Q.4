@@ -1,0 +1,18 @@
+#!/bin/bash -x
+
+num1=$(( RANDOM % 90 + 10 ))
+num2=$(( RANDOM % 90 + 10 ))
+num3=$(( RANDOM % 90 + 10 ))
+num4=$(( RANDOM % 90 + 10 ))
+num5=$(( RANDOM % 90 + 10 ))
+
+sum=$(( $num1 +$num2  +$num3  +$num4  +$num5 ))
+echo "Num1 is :: $num1 "
+echo "Num2 is :: $num2 "
+echo "Num3 is :: $num3 "
+echo "Num4 is :: $num4 "
+echo "Num5 is :: $num5 "
+echo "Sum =" $sum
+a=$(( $sum / 5 ))
+
+echo "Avearage of Random 5 Number is ::" $a

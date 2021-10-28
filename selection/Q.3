@@ -1,0 +1,9 @@
+#!/bin/bash -x
+# add two Random Dice number
+number1=$((RANDOM % 90 + 10))
+number2=$((RANDOM % 90 + 10))
+result=$(( $number1 + $number2 ))
+echo "First dice no. is :: $number1"
+echo "Second dice no. is :: $number2"
+echo "Addi of two dice no is :: $result "
+
